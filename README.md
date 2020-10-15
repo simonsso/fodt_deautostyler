@@ -1,4 +1,4 @@
-##FODT Deautostyler
+## FODT Deautostyler
 
 Word documents ODT or not, over time develop a lot of cruft and bloat. When maintaing a large or complex wordfile, or simply one that one wants to manage changes through version control, limiting that bloat is essential. 
 
@@ -12,6 +12,6 @@ Think of this as a halfway point between using Openoffice, and using the ever-so
 
 ```apt-get install python3-defusedxml inotify-tools```
 
-Open an ODT file, save it as FODT. ./fodtclean.py <your file here>. If you'd like cleaning to be continuous run ./autoclean.sh <your file here>. On save, the file will be rewritten, then use libreoffice's "reload" feature under file.
+Open an ODT file, save it as FODT. ```./fodtclean.py <your file here>```
 
 You can add the "reload" action to a keybinding in libreoffice through the tools->customize... menu items.
